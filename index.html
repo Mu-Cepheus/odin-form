@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Sign-up Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="image-overlay">
+            <div class="logo-overlay">
+                <img src="./assets/images/odin-lined.png" alt="The Odin Project logo" />
+                <p>Wotan</p>
+            </div>
+            <footer>
+                <p>Photo courtesy of <a href="https://unsplash.com/@nattv">Nattipat Vesvarute</a> on <a href="https://unsplash.com">Unsplash</a></p>
+            </footer>
+        </div>
+        <div class="form-section">
+            <div>
+                <h2>This is definitely not a real service. It is most certainly a fictitious, fabricated webpage for the
+                    purpose of styling and form layouts. More text needs to be placed on this element. Lorem Ipsum.
+                    Sign up today!
+                </h2>
+            </div>
+            <div class="form-div">
+                <h3>Please fill out the following fields</h3>
+                <form action="" id="sign-up-form">
+                    <div class="form-column">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="firstName" id="first-name">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" pattern="bruh">
+                    </div>
+                    <div class="form-column">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="lastName" id="last-name">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirm-password" pattern="bruh">
+                    </div>
+                </form>
+            </div>
+            <div>
+                <button form="sign-up-form"><strong>Create Account</strong></button>
+                <p>Already have an account? <strong><a href="#">Log In</a></strong></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

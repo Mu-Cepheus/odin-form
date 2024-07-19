@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('./assets/fonts/norse-bold-webfont.woff2') format('woff2'),
+        url('./assets/fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.main-container,
+div.logo-overlay,
+div.image-overlay,
+div.form-section,
+div.form-section form,
+div.form-column {
+    display: flex;
+}
+
+div.main-container {
+    flex-direction: row;
+    height: 100vh;
+}
+
+div.logo-overlay {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e34406c;
+    margin-top: 7rem;
+    font-family: "norsebold";
+    font-size: 5rem;
+    padding: 1rem 0;
+}
+
+div.logo-overlay img {
+    width: auto;
+    height: 100px;
+}
+
+div.image-overlay {
+    background: fixed #434c5e url(./assets/images/nattipat-vesvarute-NQWaAFoPhPY-unsplash.jpg);
+    background-size: contain;
+    flex-direction: column;
+    width: 35%;
+}
+
+div.image-overlay p {
+    color: #eceff4;
+}
+
+div.image-overlay footer {
+    margin-top: auto;
+    align-self: center;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #E5E7EB;
+}
+
+input:invalid {
+    border: 2px solid #d26e6e;
+}
+
+input:focus {
+    border: 2px solid #7e99e3;
+    box-shadow: 0 0 3px 1px #434c5e;
+}
+
+div.form-section {
+    flex-direction: column;
+    width: 65%;
+}
+
+div.form-section div.form-div {
+    min-height: 30%;
+    box-shadow: 0 2px 5px #434c5e;
+    position: relative;
+    padding: 1rem 0 0 2rem;
+}
+
+div.form-section form {
+    justify-content: flex-start;
+    padding: 1rem 0 0 0;
+    gap: 0 5rem;
+}
+
+div.form-column {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: small;
+}
+
+div.form-section>:first-child,
+div.form-section>:last-child {
+    min-height: 35%;
+    background-color: #e5e9f0;
+}
+
+div.form-section>:first-child {
+    padding: 5rem 5rem 1rem 2rem;
+}
+
+div.form-section>:last-child {
+    padding: 2rem 0 0 2rem;
+}
+
+button {
+    background-color: #8a341f;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem;
+    color: #eceff4;
+    font-size: large;
+}
+
+div.form-section>:last-child>p {
+    margin-top: 2rem;
+}
+
+div.form-section>:last-child a:link{
+    color: #8a341f;
+    text-decoration: none;
+}
+
+footer>p>a:link {
+    color: #eceff4;
+}
